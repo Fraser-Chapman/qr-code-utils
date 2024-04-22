@@ -15,8 +15,7 @@
 		<h2 class="h2">Generate QR</h2>
 
 		<div id="container">
-			<input type="text" name="input" id="input" placeholder="url" bind:value={inputValue}>
-			<button on:click={generateCode(inputValue)}>Submit</button>
+			<input class="input" type="text" name="input" id="input" placeholder="url" bind:value={inputValue} on:change="{generateCode(inputValue)}">
 		</div>
 	</div>
 </div>
