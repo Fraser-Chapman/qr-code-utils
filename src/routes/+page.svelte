@@ -2,7 +2,6 @@
 	import QRCode from 'qrcode';
 	let inputValue: string;
 
-
 	function generateCode(input: string): void {
 		QRCode.toDataURL(input, function (err, url) {
 			console.log(url);
