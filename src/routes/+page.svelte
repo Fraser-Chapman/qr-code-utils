@@ -4,14 +4,12 @@
 	let inputValue: string;
 
 	function generateCode(input: string): void {
-			const canvas = document.getElementById('qr')
-
-			QRCode.toCanvas(canvas, input, function(error) {
-				if (error) {
-					console.log(error)
-				}
-			})
-
+		const canvas = document.getElementById('qr')
+		QRCode.toCanvas(canvas, input, function(error) {
+			if (error) {
+				console.log(error)
+			}
+		})
 	}
 
 </script>
