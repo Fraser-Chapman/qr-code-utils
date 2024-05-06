@@ -16,6 +16,7 @@
 		downloadLink.setAttribute('download', 'qr.png');
 		downloadLink.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
 		downloadLink.click()
+		downloadLink.remove()
 	}
 
 </script>
